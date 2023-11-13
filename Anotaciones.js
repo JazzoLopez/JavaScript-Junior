@@ -124,3 +124,65 @@ for (let arr in array2){
         document.writeln(array2[arr] + "<br>")
     }
 }
+
+//*FUNCIONES
+function saludar(){ //function declaration
+    respuesta = prompt("Hola como fue tu dia");
+    if(respuesta == "bien"){
+        alert("Genial que te fue bien");
+    }else {
+        alert("Una pena");
+    }
+}
+//? saludar()
+
+saludo = function(){ //function expression
+    respuesta = prompt("Hola como fue tu dia");
+    if(respuesta == "bien"){
+        alert("Genial que te fue bien");
+    }else {
+        alert("Una pena");
+    }
+}
+//? saludo()
+
+//*USO DEL RETURN, PARA REGRESAR UN VALOR Y DEVUELVE UN TIPO DE DATO
+
+function ejemplo(){
+    alert("Hola")
+    return `La funcion se ejecutó correctamente` //Retornamos este dato y ese es el tipo de dato
+}
+//*EL RETURN FINALIZA LA FUNCION, COMO EL BREAK, AHI DICE EPAAA FIN
+document.writeln("<br>" +typeof (ejemplo()))
+
+//*LAS FUNCIONES NO SON FUNCIONES SIN PARAMETROS PORQUE SIN ELLOS NO VARIAN SUS DATOS
+
+function suma(val1, val2){
+    let resultado = val1+val2;
+    document.write("<br>")
+    return resultado;
+    
+}
+
+document.write(suma(10)) //*LOS PARAMETROS DEBEN LLEVAR UN VALOR SI NO NOS ARROJA UN NAN
+document.write(suma(1222,12))
+document.write(suma(10,21))
+document.write(suma(4,12))
+document.write(suma(20,12))
+
+    let frasesaludo = (nombre) =>{
+    let frase = `Hola ${nombre}`
+    return frase;
+}
+
+document.write("<br>" + frasesaludo("Jazziel"))
+
+const salut = () => {
+    return "Hao"
+}
+
+document.write(frasesaludo("jasdasd"))
+
+const valores = () => document.write("<br> Hola")
+
+valores()
