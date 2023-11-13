@@ -18,16 +18,67 @@ const validateClient = (time) => {
     }
     else{
         if(time >= 2 && time < 7 && free == false){
-            alert("Pasa es gratis para ti")
+            alert("Pasa es gratis para ti porque eres la primer persona despues de las 2:00 AM")
             free = true;
         }
         else{
-            alert("Puedes pasar pero debes de pagar la entrada")
+            alert(`Puedes pasar pero debes de pagar la entrada pues ya son las ${time}:00 Horas`)
         }
     }
 }
 
-validateClient(2)
-validateClient(3)
-validateClient(4)
-validateClient(5)
+// //validateClient(2)
+// //validateClient(3)
+// //validateClient(4)
+// //validateClient(5)
+
+// //* CREAR UN MINISISTEMA QUE NOS PERMITA REGISTRAR LOS ALUMNOS PRESENTES Y AUSENTES EN CLASE.
+// //* PASADOS DE LOS 30 DIAS MOSTRAR LA SITUACION FINAL DE TODOS LOS ALUMNOS (NUMERO DE PRESENTES Y NUMERO DE AUSENTES)
+// //*SE PUEDE TENER UN MAXIMO DE 10% DE AUSENCIA POR SEMESTRE SI SE TIENEN MAS ACLARAR QUE ESTANN REPROBADOS
+//  //? let cantidad = prompt("Cuantos alumnos son")
+ s
+ //*CREAR CALCULADORA QUE SIMPLIFIQUE EL TRABAJO CON FUNCIONES
+
+ const suma = (num1, num2) =>{
+    return parseInt(num1) + parseInt(num2);
+ }
+
+ const resta = (num1, num2) =>{
+    return parseInt(num1) - parseInt(num2);
+ }
+
+ const multiplicacion = (num1, num2) =>{
+    return parseInt(num1) * parseInt(num2);
+ }
+
+ const division = (num1, num2) =>{
+    return parseFloat5(num1) / parseFloat(num2);
+ }
+
+ let op = prompt("Que operacion deseas realizar¿? \n1.- Suma \n2.- Resta \n3.- Multiplicacion \n4.-Division")
+op = parseInt(op)
+
+ switch (op) {
+    case 1:
+            num1 = prompt("Ingresa el valor del numero 1")
+            num2 = prompt("Ingresa el valor del numero 2")
+            alert(`El resultado de la suma es: ${suma(num1,num2)}`)
+        break;
+    case 2:
+            num1 = prompt("Ingresa el valor del numero 1")
+            num2 = prompt("Ingresa el valor del numero 2")
+            alert(`El resultado de la resta es: ${resta(num1,num2)}`)
+        break;
+    case 3:
+            num1 = prompt("Ingresa el valor del numero 1")
+            num2 = prompt("Ingresa el valor del numero 2") 
+            alert(`El resultado de la multiplicacion es: ${multiplicacion(num1,num2)}`)
+        break;
+    case 4:
+            num1 = prompt("Ingresa el valor del numero 1")
+            num2 = prompt("Ingresa el valor del numero 2")
+            alert(`El resultado de la division es: ${division(num1,num2)}`)
+        break;
+    default:
+        break;
+ }
