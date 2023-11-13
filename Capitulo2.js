@@ -10,22 +10,22 @@
 //*OTRA OPCION ES TOMAR LA HORA DE ACUERDO AL TIEMPO DEL SISTEMA
 
 
-let free = false
-const validateClient = (time) => {
-    let age = prompt("Cual es tu edad");
-    if(age < 18){
-        alert("Eres menor de edad lo siento")
-    }
-    else{
-        if(time >= 2 && time < 7 && free == false){
-            alert("Pasa es gratis para ti porque eres la primer persona despues de las 2:00 AM")
-            free = true;
-        }
-        else{
-            alert(`Puedes pasar pero debes de pagar la entrada pues ya son las ${time}:00 Horas`)
-        }
-    }
-}
+// let free = false
+// const validateClient = (time) => {
+//     let age = prompt("Cual es tu edad");
+//     if(age < 18){
+//         alert("Eres menor de edad lo siento")
+//     }
+//     else{
+//         if(time >= 2 && time < 7 && free == false){
+//             alert("Pasa es gratis para ti porque eres la primer persona despues de las 2:00 AM")
+//             free = true;
+//         }
+//         else{
+//             alert(`Puedes pasar pero debes de pagar la entrada pues ya son las ${time}:00 Horas`)
+//         }
+//     }
+// }
 
 // //validateClient(2)
 // //validateClient(3)
@@ -36,7 +36,40 @@ const validateClient = (time) => {
 // //* PASADOS DE LOS 30 DIAS MOSTRAR LA SITUACION FINAL DE TODOS LOS ALUMNOS (NUMERO DE PRESENTES Y NUMERO DE AUSENTES)
 // //*SE PUEDE TENER UN MAXIMO DE 10% DE AUSENCIA POR SEMESTRE SI SE TIENEN MAS ACLARAR QUE ESTANN REPROBADOS
 //  //? let cantidad = prompt("Cuantos alumnos son")
- s
+ 
+//  let alumnosTotales = []
+//  for (i = 0; i < cantidad; i++){
+//     alumnosTotales[i] = [prompt(`Nombre del alumno ${i+1}`),0]  
+//  }
+
+
+//  const tomarAsistencia = (nombre, p) => {
+//     let presente = prompt(nombre);
+//     //A O P
+//     if(presente == "P" || presente == "p"){
+//         alumnosTotales[p][1]++;
+//     }
+//  }
+
+//  for(i = 0; i <30 ; i++){
+//     for (alumno in alumnosTotales){
+//         tomarAsistencia(alumnosTotales[alumno][0],alumno)
+//     }
+//  }
+
+//  for(alumno in alumnosTotales){
+//     let resultado = `${alumnosTotales[alumno][0]}:<br>
+//     ______Presentes:${alumnosTotales[alumno][1]}<br>
+//     ------Ausentes:${30 -parseInt(alumnosTotales[alumno][1])}
+//     <br>
+//     `
+//     if((30 - alumnosTotales[alumno][1]) > 18){
+//         resultado+= `<br><p style="background:red;">Reprobado por inasistencia</p>`
+//     }   
+//     else{`<br><br>`}
+//     document.write(resultado)
+//  }
+
  //*CREAR CALCULADORA QUE SIMPLIFIQUE EL TRABAJO CON FUNCIONES
 
  const suma = (num1, num2) =>{
@@ -52,7 +85,7 @@ const validateClient = (time) => {
  }
 
  const division = (num1, num2) =>{
-    return parseFloat5(num1) / parseFloat(num2);
+    return parseFloat(num1) / parseFloat(num2);
  }
 
  let op = prompt("Que operacion deseas realizar¿? \n1.- Suma \n2.- Resta \n3.- Multiplicacion \n4.-Division")
