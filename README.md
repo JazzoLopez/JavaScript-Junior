@@ -1,4 +1,4 @@
-# Las-historias-de-Cofla
+# JavaScript nivel Junior
 
 Aquí tendré mis ejercicios que realizo del curso del canal de soy Dalto 
 Ejercicios resueltos del "Curso de JAVASCRIPT desde CERO (Completo) - Nivel JUNIOR" del canal de Soy Dalto, te invito a ver su canal:<br>
@@ -12,7 +12,7 @@ El contenido por ahora es: <br>
  - Capitulo 2
  - Anotaciones de mis avances en el curso
 
-Todas las instrucciones están dentro de cada ejercicio como documentación
+Todas las instrucciones están dentro de cada ejercicio como documentación, ademas espero con esto lograr pasar un escalon en el lenguaje de JavaScript a Junior
 
 ## Tecnologías utilizadas
 <p align="center">
