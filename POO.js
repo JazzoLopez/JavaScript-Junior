@@ -42,11 +42,18 @@ class animal {
 class perro extends animal{
     constructor(especie, edad, color, raza){
         super(especie,edad,color);
-        this.raza = raza;
-
+        this.raza = raza
     }
-    ladrar(){
+    static ladrar(){
         alert("waaaw")
+    }
+
+    set modificarRaza(newName){
+        this.raza = newName
+    }
+
+    get getRaza(){
+        return this.raza;
     }
 }
 
@@ -67,6 +74,6 @@ let pajaro = new animal("Loro",12,"Verde")
 perrote.verInformacion();//USO DEL METODO
 gato.verInformacion();
 pajaro.verInformacion();
+perrote.modificarRaza = "pato"
 
-perrote.ladrar()
-
+document.write(perrote.getRaza)
