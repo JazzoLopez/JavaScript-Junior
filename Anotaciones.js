@@ -186,3 +186,4 @@ document.write(frasesaludo("jasdasd"))
 const valores = () => document.write("<br> Hola")
 
 valores()
+

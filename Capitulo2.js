@@ -27,10 +27,10 @@
 //     }
 // }
 
-// //validateClient(2)
-// //validateClient(3)
-// //validateClient(4)
-// //validateClient(5)
+//validateClient(2)
+//validateClient(3)
+//validateClient(4)
+//validateClient(5)
 
 // //* CREAR UN MINISISTEMA QUE NOS PERMITA REGISTRAR LOS ALUMNOS PRESENTES Y AUSENTES EN CLASE.
 // //* PASADOS DE LOS 30 DIAS MOSTRAR LA SITUACION FINAL DE TODOS LOS ALUMNOS (NUMERO DE PRESENTES Y NUMERO DE AUSENTES)
