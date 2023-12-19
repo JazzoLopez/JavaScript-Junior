@@ -1,3 +1,31 @@
+//*ABSTRACCION
+/**
+ * TENGO UN AUTO, EL AUTO ES EL OBJETO NO?
+ * TRATAMOS DE REDUCIR O RESUMIR COMO 
+ * MARCA, MODELO, COLOR Y ASI AL IGUAL LOS METODOS COMO AVANZAR, RETROCEDER
+ */
+
+//*ENCAPSULAMIENTO
+
+/**ENCAPSULAR DATOS PARA QUE NO SALGA DE AHI, DIGAMOS QUE ES MAS SEGURIDAD
+ * EL USUARIO NO TIENE CONECCION DIRECTA A LOS DATOS O NO TIENE NADA
+ */
+
+//*POLIMORFISMO
+
+/**
+ * MUCHAS FORMAS, DIGAMOS JAJA
+ */
+
+//*HERENCIA
+/**HAY UNA CLASE PADRE LA CUAL HEREDA, PROPIEDADES Y METODOS A LOS HIJOS.
+ * UTILIZAMOS EXTENDS
+ */
+
+//*ES UN OBJETO ASI QUE PARA ACCEDER A LAS PROPIEDADES ES CON UN '.'
+
+//*
+
 class animal {
     constructor(especie, edad, color){ /*DENTRO VAN LOS PARAMETROS*/
         this.especie = especie; //*CREAMOS UNA PROPIEDAD LLAMADA ESPECIE Y SERA GUAL AL VALOR QUE LLEGA DE PARAMETRO
@@ -11,14 +39,22 @@ class animal {
         document.write(this.informacion+"<br>")
     }
 }
+class perro extends animal{
+    constructor(especie, edad, color, raza){
+        super(especie,edad,color);
+        this.raza = raza;
 
-//*INSTANCIAMOS
+    }
+    ladrar(){
+        alert("waaaw")
+    }
+}
 
-let perro = new animal("Pug",22,"Gris")
+let perrote = new perro("perro",22,"Gris","doberman") //*NO PUEDES TENER EL MISMO NOMBRE EN CLASE Y UN OBJETO
 let gato = new animal("gato",15,"Negro")
 let pajaro = new animal("Loro",12,"Verde")
  
-//*ES UN OBJETO ASI QUE PARA ACCEDER A LAS PROPIEDADES ES CON UN '.'
+
 
 // document.write(pajaro.informacion+"<br>")
 
@@ -28,6 +64,9 @@ let pajaro = new animal("Loro",12,"Verde")
 
 /*SI LA PONEMOS FUERA ES FUNCION, SI LA TENEMOS DENTRO DEL OBJETO SE CONOCE COMO METODO*/
 
-perro.verInformacion();//USO DEL METODO
+perrote.verInformacion();//USO DEL METODO
 gato.verInformacion();
 pajaro.verInformacion();
+
+perrote.ladrar()
+
