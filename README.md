@@ -13,3 +13,16 @@ El contenido por ahora es: <br>
  - Anotaciones de mis avances en el curso
 
 Todas las instrucciones están dentro de cada ejercicio como documentación
+
+## Tecnologías utilizadas
+<p align="center">
+    <img src="https://skillicons.dev/icons?i=js,html"/>
+  
+  
+  
+  <br>
+  <br>
+  <img src="https://img.shields.io/badge/STATUS-En proceso-yellow"/>
+ 
+</p>
+
