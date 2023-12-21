@@ -27,40 +27,40 @@
 //*
 
 class animal {
-    constructor(especie, edad, color){ /*DENTRO VAN LOS PARAMETROS*/
+    constructor(especie, edad, color) { /*DENTRO VAN LOS PARAMETROS*/
         this.especie = especie; //*CREAMOS UNA PROPIEDAD LLAMADA ESPECIE Y SERA GUAL AL VALOR QUE LLEGA DE PARAMETRO
         this.edad = edad;
         this.color = color
         this.informacion = `Soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`
         //*METODO
-       
+
     }
-    verInformacion(){
-        document.write(this.informacion+"<br>")
+    verInformacion() {
+        document.write(this.informacion + "<br>")
     }
 }
-class perro extends animal{
-    constructor(especie, edad, color, raza){
-        super(especie,edad,color);
+class perro extends animal {
+    constructor(especie, edad, color, raza) {
+        super(especie, edad, color);
         this.raza = raza
     }
-    static ladrar(){
+    static ladrar() {
         alert("waaaw")
     }
 
-    set modificarRaza(newName){
+    set modificarRaza(newName) {
         this.raza = newName
     }
 
-    get getRaza(){
+    get getRaza() {
         return this.raza;
     }
 }
 
-let perrote = new perro("perro",22,"Gris","doberman") //*NO PUEDES TENER EL MISMO NOMBRE EN CLASE Y UN OBJETO
-let gato = new animal("gato",15,"Negro")
-let pajaro = new animal("Loro",12,"Verde")
- 
+let perrote = new perro("perro", 22, "Gris", "doberman") //*NO PUEDES TENER EL MISMO NOMBRE EN CLASE Y UN OBJETO
+let gato = new animal("gato", 15, "Negro")
+let pajaro = new animal("Loro", 12, "Verde")
+
 
 
 // document.write(pajaro.informacion+"<br>")
@@ -77,3 +77,50 @@ pajaro.verInformacion();
 perrote.modificarRaza = "pato"
 
 document.write(perrote.getRaza)
+
+class app {
+    constructor(descargas, puntuacion, peso) {
+        this.descargas = descargas;
+        this.puntuacion = puntuacion;
+        this.peso = peso;
+        this.iniciada = false;
+        this.instalada = false;
+    }
+    abrir() {
+        if (this.iniciada == false && this.instalada == true) {
+            this.iniciada = true
+        }
+    }
+
+    cerrar() {
+        if (this.iniciada == true && this.instalada == true) {
+            this.iniciada = false;
+            alert('App iniciada')
+        }
+    }
+
+    instalar() {
+        if(this.instalada == false){
+            this.instalada = true;
+          if(this.instalada == true){
+              alert('App instalada correctamente');
+          }else{
+                alert('No se pudo instalar la app');
+          }
+        }
+    }
+
+    desinstalar() {
+        if(this.instalada == true){
+            this.instalada = false;
+            alert('App instalada correctamente')
+        }
+    }
+}
+
+app = new app("1.000", "5 estrellas", "900mb")
+
+
+app.instalar();
+app.abrir();
+app.cerrar();

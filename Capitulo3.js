@@ -99,3 +99,77 @@ document.write(`
     ${celular3.mostrarInfo()}<br> `
 )
 
+
+
+class app {
+    constructor(descargas, puntuacion, peso) {
+        this.descargas = descargas;
+        this.puntuacion = puntuacion;
+        this.peso = peso;
+        this.iniciada = false;
+        this.instalada = false;
+    }
+    abrir() {
+        if (this.iniciada == false && this.instalada == true) {
+            this.iniciada = true;
+            alert('App iniciada')
+        }
+    }
+
+    cerrar() {
+        if (this.iniciada == true && this.instalada == true) {
+            this.iniciada = false;
+            alert('App cerrada')
+        }
+    }
+
+    instalar() {
+        if(this.instalada == false){
+            this.instalada = true;
+          if(this.instalada == true){
+              alert('App instalada correctamente');
+          }else{
+                alert('No se pudo instalar la app');
+          }
+        }
+    }
+
+    desinstalar() {
+        if(this.instalada == true){
+            this.instalada = false;
+            alert('App desisntalada correctamente')
+        }
+    }
+
+    appInfo(){
+        return `
+        Descargas: <b>${this.descargas}</b><br>
+        Puntuacion: <b>${this.puntuacion}</b><br>
+        Peso: <b>${this.peso}</b><br>
+        `
+    }
+}
+
+const app1 = new app("1.000", "5 estrellas", "900mb");
+const app2 = new app("500", "4.5 estrellas", "800mb");
+const app3 = new app("700", "3 estrellas", "700mb");
+const app4 = new app("300", "2.5 estrellas", "600mb");
+const app5 = new app("1.500", "1 estrella", "500mb");
+const app6 = new app("800", "4 estrellas", "400mb");
+const app7 = new app("1.200", "4.5 estrellas", "300mb");
+
+
+
+// app1.instalar();
+// app1.desinstalar();
+// app1.abrir();
+// app1.cerrar();
+document.write(`
+    ${app1.appInfo()}<br>
+    ${app2.appInfo()}<br>   
+    ${app3.appInfo()}<br>   
+    ${app4.appInfo()}<br>   
+    ${app5.appInfo()}<br>   
+    ${app6.appInfo()}<br>   
+    ${app7.appInfo()}<br>   
+    `)
