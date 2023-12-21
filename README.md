@@ -10,6 +10,7 @@ El contenido por ahora es: <br>
 
  - Capitulo 1
  - Capitulo 2
+ - Capitulo 3
  - Anotaciones de mis avances en el curso
 
 Todas las instrucciones están dentro de cada ejercicio como documentación, ademas espero con esto lograr pasar un escalon en el lenguaje de JavaScript a Junior
