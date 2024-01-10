@@ -210,8 +210,10 @@ resultado = test.lastIndexOf("s")
 //RELENA EL LIMITE  QUE PONES EL SEGUNDO PARAMETRO ES CON QUE LO RELLENARA
 
 // resultado = test.padEnd(20,"aeiou ")
-resultado = test.repeat(30)
+// resultado = test.repeat(30)
 
+// document.write(resultado)
+
+let testDividido = "hola como estas" //CAMBIA EL "COMO" DIVIDIENDOLO Y CREANDO UN ARRAY
+resultado = testDividido.split("como")
 document.write(resultado)
-
-//
